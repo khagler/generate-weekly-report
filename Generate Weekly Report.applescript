@@ -21,7 +21,7 @@ on chooseFolders()
 end chooseFolders
 
 -- Handler to determine which day the report is for. We want a report as of 5 PM on Friday,
--- and of today is not Friday, use the most recent Friday.
+-- and if today is not Friday, use the most recent Friday.
 on getDate()
 	set today to current date
 	repeat while today's weekday is not Friday
